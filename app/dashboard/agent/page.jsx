@@ -15,7 +15,7 @@ function agent () {
                         className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                         <h6 className="m-0 font-weight-bold">LISTA DE AGENTES</h6>
                         <div className="dropdown no-arrow">
-                            <Link className="" href="/dashboard/agent">
+                            <Link className="" href="https://client-multiagent-091c69d69e79.herokuapp.com/dashboard/agent">
                                 <i className="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                             </Link>
 
@@ -31,7 +31,7 @@ function agent () {
             <div className="col-xl-5 col-lg-6 row">
               <div className='d-flex flex-column gap-4'>
                 <h5 className='p-0'>Registrar nuevo agente</h5>
-                <Link href={'/dashboard/agent/new'} className='text-white' style={{ width: 'fit-content' }}><Button className='rounded p-2 '>Registrar</Button></Link>
+                <Link href={'https://client-multiagent-091c69d69e79.herokuapp.com/dashboard/agent/new'} className='text-white' style={{ width: 'fit-content' }}><Button className='rounded p-2 '>Registrar</Button></Link>
               </div>
 
             </div>

@@ -6,7 +6,7 @@ import { getServerSession } from 'next-auth/next'
 import { authOptions } from '../lib/auth'
 
 const data = async (id) => {
-  const res = await fetch('http://localhost:3000/api/profile', { method: 'POST', body: JSON.stringify({ id }) })
+  const res = await fetch('https://client-multiagent-091c69d69e79.herokuapp.com/api/profile', { method: 'POST', body: JSON.stringify({ id }) })
   return res.json()
 }
 async function DashboardAgent (prop) {

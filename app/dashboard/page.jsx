@@ -6,7 +6,7 @@ import { authOptions } from '../lib/auth'
 import DashboardAgent from './DashboardAgent'
 
 const agents = async (session) => {
-  const res = await fetch('http://localhost:3000/api/agents', { method: 'POST', body: JSON.stringify({ id: session?.user?._id }) })
+  const res = await fetch('https://client-multiagent-091c69d69e79.herokuapp.com/api/agents', { method: 'POST', body: JSON.stringify({ id: session?.user?._id }) })
   return res.json()
 }
 

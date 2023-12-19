@@ -1,3 +1,4 @@
+'use client'
 import dbConnect from './dbconnect'
 import Users from '../models/Users'
 import CredentialsProvider from 'next-auth/providers/credentials'

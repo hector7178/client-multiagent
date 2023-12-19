@@ -4,11 +4,11 @@ import { NextResponse } from 'next/server'
 export async function POST (request) {
   try {
     await connectDB()
-    const server = 'https://d4ee-201-242-192-154.ngrok-free.app'
+    const server = 'https://multiagent-829b0de14a8c.herokuapp.com'
 
     const { idSend, msj, element } = await request.json()
     console.log(idSend, msj, element)
-    const res = await fetch(`https://d4ee-201-242-192-154.ngrok-free.app/message${element.replace(server, '')}`, {
+    const res = await fetch(`https://multiagent-829b0de14a8c.herokuapp.com/message${element.replace(server, '')}`, {
       method: 'POST',
       body: JSON.stringify({
         id_send: idSend,

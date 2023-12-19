@@ -7,7 +7,7 @@ import { getServerSession } from 'next-auth'
 import { authOptions } from '../../lib/auth'
 
 async function getAgent (id) {
-  const res = await fetch('http://localhost:3000/api/agents', { method: 'POST', body: JSON.stringify({ id }) })
+  const res = await fetch('https://client-multiagent-091c69d69e79.herokuapp.com/api/agents', { method: 'POST', body: JSON.stringify({ id }) })
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
@@ -29,7 +29,7 @@ async function AgentList () {
       </div>
         <div className='d-flex flex-row col-4 gap-2 align-items-center'>
           <TrashIcon className='col-5 icons' delete={e?._id} style={{ fill: '#00ADB5' }}/>
-          <Link href={`/dashboard/agent/edit?id=${e?._id}&username=${e?.username}&email=${e?.email}&company=${e?.company}`}><EditIcon className='col-5 icons' style={{ stroke: '#00ADB5' }}/></Link>
+          <Link href={`https://client-multiagent-091c69d69e79.herokuapp.com/dashboard/agent/edit?id=${e?._id}&username=${e?.username}&email=${e?.email}&company=${e?.company}`}><EditIcon className='col-5 icons' style={{ stroke: '#00ADB5' }}/></Link>
         </div>
       </div>)
     })}

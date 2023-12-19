@@ -7,7 +7,7 @@ export default async function Page () {
   const session = await getServerSession(authOptions)
 
   if (session) {
-    redirect('http://localhost:3000/dashboard')
+    redirect('https://client-multiagent-091c69d69e79.herokuapp.com/dashboard')
   }
   return (<Register></Register>)
 }
