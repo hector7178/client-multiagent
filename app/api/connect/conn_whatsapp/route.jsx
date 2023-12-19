@@ -1,6 +1,6 @@
 import connectDB from '../../../lib/dbconnect'
 import { NextResponse } from 'next/server'
-import Whatsapp from '../../../models/whatsapp'
+import Whatsapp from '../../../models/MWhatsapp'
 export async function POST (request) {
   try {
     await connectDB()

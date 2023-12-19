@@ -4,7 +4,7 @@ import Chat from '../../../../components/Chat'
 import { getServerSession } from 'next-auth/next'
 import { authOptions } from '../../../../lib/auth'
 import { redirect } from 'next/navigation'
-import Whatsapp from '../../../../models/whatsapp'
+import Whatsapp from '../../../../models/MWhatsapp'
 
 const datafetch = async (session) => {
   const resFetch = await fetch(`${process.env.NEXTAUTH_URL}/api/profile`, { method: 'POST', body: JSON.stringify({ id: session }) })
