@@ -11,7 +11,7 @@ import GenerateToken from '../../../utils/TokenGen'
 
 function RegisterAccount (prop) {
   const router = useRouter()
-  const server = 'https://multiagent-829b0de14a8c.herokuapp.com/'
+  const server = 'https://multiagent-829b0de14a8c.herokuapp.com'
 
   const { data: session } = useSession()
   const [errorRes, setErrorRes] = useState()
