@@ -23,7 +23,7 @@ async function page () {
   const dataRes = await datafetch(session.user.rol === 'agent' ? session.user.id_company : session.user._id)
   const path = await pathF(session.user.rol === 'agent' ? session.user.id_company : session.user._id)
   if (!dataRes?.profile?.whatsapp) {
-    redirect(`${process.env.NEXTAUTH_URL}/dashboard/account/whatsapp`)
+    redirect('https://client-multiagent-091c69d69e79.herokuapp.com/dashboard/account/whatsapp')
   }
   return (
     <main className='d-flex flex-column bg-white w-100 p-4'>

@@ -7,7 +7,7 @@ import { redirect } from 'next/navigation'
 import Messenger from '../../../../models/Messenger'
 
 const datafetch = async (session) => {
-  const resFetch = await fetch(`${process.env.NEXTAUTH_URL}/api/profile`, { method: 'POST', body: JSON.stringify({ id: session }) })
+  const resFetch = await fetch('https://client-multiagent-091c69d69e79.herokuapp.com/api/profile', { method: 'POST', body: JSON.stringify({ id: session }) })
   const dataFetch = await resFetch.json()
   return dataFetch
 }
@@ -23,7 +23,7 @@ async function page () {
   const dataRes = await datafetch(session.user.rol === 'agent' ? session.user.id_company : session.user._id)
   const path = await pathF(session.user.rol === 'agent' ? session.user.id_company : session.user._id)
   if (!dataRes?.profile?.messenger) {
-    redirect(`${process.env.NEXTAUTH_URL}/dashboard/account/messenger`)
+    redirect('https://client-multiagent-091c69d69e79.herokuapp.com/dashboard/account/messenger')
   }
   return (
     <main className='d-flex flex-column bg-white w-100 p-4'>
