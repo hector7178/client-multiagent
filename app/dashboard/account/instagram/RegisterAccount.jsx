@@ -12,7 +12,7 @@ import Link from 'next/link'
 function RegisterAccount (prop) {
   const { data: session } = useSession()
   const router = useRouter()
-  const server = 'https://d4ee-201-242-192-154.ngrok-free.app'
+  const server = 'https://multiagent-829b0de14a8c.herokuapp.com/'
   const [errorRes, setErrorRes] = useState()
   const [generate, setGenerate] = useState(false)
   const [dataWebhook, setDataWebhook] = useState()

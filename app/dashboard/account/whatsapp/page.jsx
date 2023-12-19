@@ -15,7 +15,7 @@ async function page () {
   const dataRes = await datafetch(session)
 
   if (dataRes?.profile?.whatsapp) {
-    redirect('http://localhost:3000/dashboard/account/whatsapp/chat')
+    redirect('https://client-multiagent-091c69d69e79.herokuapp.com/dashboard/account/whatsapp/chat')
   }
   return (
     <main className='d-flex flex-column bg-white w-100 main gap-4 '>
