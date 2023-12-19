@@ -1,0 +1,37 @@
+h2{
+    color:#00ADB5;
+    font-size: 2rem;
+}.main-signin{
+    height: 88vh;
+    width: 100%;
+    padding: 5rem;
+}.section{
+    width: 70%;
+    justify-content:center;
+}.input{
+    border: 1px solid #00ADB5;
+
+}.error{
+    font-size: 0.8rem;
+}@media (max-width:700px) {
+    .main{
+        padding: 1.5rem;
+        align-content: center;
+    }.section{
+        width: 100%;
+        height: max-content !important;
+        padding:2.5rem;
+    }
+    
+}@media (max-width:500px) {
+    .main{
+        padding: 1.5rem;
+        align-content: center;
+    }.section{
+        width: 100%;
+        height: max-content !important;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+    
+}

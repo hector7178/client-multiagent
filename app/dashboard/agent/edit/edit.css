@@ -1,0 +1,29 @@
+.main{
+    height: 96vh;
+    padding: 3rem;
+}.icon{
+    height: 2rem;
+    width: 2rem;
+    transition: all ease-in-out;
+    transition-duration:200ms;
+    color: #00ADB5;
+    cursor: pointer;
+
+}.input{
+    border:1px solid #00ADB5;
+}.icon:hover{
+    scale: 1.05;
+    transition: all ease-in-out;
+    transition-duration:200ms;
+
+}@media (max-width:700px) {
+    .main{
+      padding:2rem;
+    }
+    
+}@media (max-width:300px) {
+    .main{
+        padding:1rem;
+    }
+    
+}

@@ -1,0 +1,36 @@
+{
+  "name": "fullstack-next-boostrap",
+  "version": "0.1.0",
+  "engines": {
+    "node": "20.9.0"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
+    "bootstrap": "^5.3.2",
+    "mongoose": "^8.0.0",
+    "next": "14.0.1",
+    "next-auth": "^4.24.4",
+    "react": "^18",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18",
+    "react-hook-form": "^7.48.2",
+    "yup": "^1.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.35",
+    "eslint": "^8.53.0",
+    "eslint-config-next": "14.0.1",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.2.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2"
+  }
+}

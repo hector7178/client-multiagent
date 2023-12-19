@@ -1,0 +1,8 @@
+.main{
+    height: 96vh;
+    padding: 1.5rem;
+}.label{
+    font-size: 1.1rem;
+}.input{
+    border: 1px solid #00ADB5;
+}
