@@ -107,12 +107,12 @@ function RegisterAccount (prop) {
       ? generate
         ? <form onSubmit={handleSubmit()} className='row gap-2 h-75'>
             <span className='text-danger'>{errorRes}</span>
-            <div className='row'>
+            <div className='row  hidden'>
                 <label className='label col-12 p-0'>Token de autorización</label>
                 <span className='text-danger error'>{errors?.token_auth?.message}</span>
                 <input {...register('token_auth')} disabled className='input text-black col-12 col-lg-10 rounded'></input>
             </div>
-            <div className='row'>
+            <div className='row hidden'>
                 <label className='label col-12 p-0'>Id Account</label>
                 <span className='text-danger error'>{errors?.token_auth?.message}</span>
                 <input {...register('id_number')} disabled className='input text-black col-12 col-lg-10 rounded'></input>
@@ -124,7 +124,7 @@ function RegisterAccount (prop) {
             </div>
 
             <Button type='submit' className=' fs-5 p-2 rounded'>
-              <Link href={`https://www.facebook.com/v18.0/dialog/oauth?client_id=${valueIdent}&display=page&extras={"setup":{"channel":"IG_API_ONBOARDING"}}&redirect_uri=http://localhost:3000/dashboard/account/instagram/&response_type=token&scope=instagram_basic,instagram_content_publish,instagram_manage_comments,instagram_manage_insights,pages_show_list,pages_read_engagement,instagram_manage_messages,business_management,pages_messaging,pages_read_user_content`} className='text-white'>Login</Link>
+              <Link href={`https://www.facebook.com/v18.0/dialog/oauth?client_id=${valueIdent}&display=page&extras={"setup":{"channel":"IG_API_ONBOARDING"}}&redirect_uri=https://client-multiagent-091c69d69e79.herokuapp.com/dashboard/account/instagram/&response_type=token&scope=instagram_basic,instagram_content_publish,instagram_manage_comments,instagram_manage_insights,pages_show_list,pages_read_engagement,instagram_manage_messages,business_management,pages_messaging,pages_read_user_content`} className='text-white'>Login</Link>
             </Button>
         </form>
         : <section className='row gap-2 h-75'>
