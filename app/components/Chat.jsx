@@ -14,7 +14,7 @@ function Chat (prop) {
 
   useEffect(() => {
     const chatsfetch = async (id, type) => {
-      const resFetch = await fetch('http://localhost:3000/api/chats', { method: 'POST', body: JSON.stringify({ id, type }) })
+      const resFetch = await fetch('https://client-multiagent-091c69d69e79.herokuapp.com/api/chats', { method: 'POST', body: JSON.stringify({ id, type }) })
       const dataFetch = await resFetch.json()
       return dataFetch
     }
@@ -26,7 +26,7 @@ function Chat (prop) {
   const sendEnter = async (e) => {
     if (e.key === 'Enter') {
       if (infoMsj !== '') {
-        const resFetch = await fetch('http://localhost:3000/api/sendchats', { method: 'POST', body: JSON.stringify({ idSend: infoMsj, msj, element: prop.path }) })
+        const resFetch = await fetch('https://client-multiagent-091c69d69e79.herokuapp.com/api/sendchats', { method: 'POST', body: JSON.stringify({ idSend: infoMsj, msj, element: prop.path }) })
         const dataFetch = await resFetch.json()
         setMsj('')
         return dataFetch
@@ -35,7 +35,7 @@ function Chat (prop) {
   }
   const send = async (e) => {
     if (infoMsj !== '') {
-      const resFetch = await fetch('http://localhost:3000/api/sendchats', { method: 'POST', body: JSON.stringify({ idSend: infoMsj, msj, element: prop.path }) })
+      const resFetch = await fetch('https://client-multiagent-091c69d69e79.herokuapp.com/api/sendchats', { method: 'POST', body: JSON.stringify({ idSend: infoMsj, msj, element: prop.path }) })
       const dataFetch = await resFetch.json()
       setMsj('')
       return dataFetch
