@@ -37,7 +37,7 @@ export async function POST (request) {
       company_id: companyId,
       token_webhook: tokenWebhook,
       token_authorization: tokenAuthorization,
-      id_Page: idPage,
+      id_page: idPage,
       webhook_path: webhookPath,
       chats: []
     })
