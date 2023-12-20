@@ -99,7 +99,7 @@ function Chat (prop) {
             <div ref={focus2} className="w-100 h-75 overflow-scroll overflow-x-hidden scroll flex flex-column gap-2">
             {Chats[chatSelected]?.chat?.map((data, i) => {
               return (<div key={i} className='col-12 d-grid'>
-                  <div className={`${data?.chat?.user === 'Griman`s' ? ' msj-send justify-self-end' : 'msj-recive'} shadow p-2 mt-4`}>
+                  <div className={`${Chats[chatSelected].identy === data?.chat?.user ? ' msj-send justify-self-end' : 'msj-recive'} shadow p-2 mt-4`}>
                       <p>{data?.msj}</p>
                   </div>
                 </div>)
