@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-const MONGODB_URI = proccess.env.MONGODB_URI || 'mongodb+srv://hector7178:taulica123@cluster0.izqeutb.mongodb.net/multiagent?retryWrites=true&w=majority'
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://hector7178:taulica123@cluster0.izqeutb.mongodb.net/multiagent?retryWrites=true&w=majority'
 
 if (!MONGODB_URI) {
   throw new Error(
