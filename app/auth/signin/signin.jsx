@@ -36,7 +36,7 @@ function Signin () {
 
   return (
     <main
-    style={{ backgroundImage: 'url(https://client-multiagent-091c69d69e79.herokuapp.com/page3.svg)', backgroundSize: 'cover' }}
+    style={{ backgroundImage: 'url(/page3.svg)', backgroundSize: 'cover' }}
     className="main-signin justify-content-center row m-0">
       <section className='shadow-lg section rounded row  bg-white h-100  align-items-center'>
         <div className='col-5  rounded d-none d-lg-flex'>
